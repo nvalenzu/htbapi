@@ -27,7 +27,10 @@ htbapi.init()
 ### Information about active machines and challenges
 ```py
 htbapi.machines
+# machine object contains: Name, User owns, System owns, Difficulty, "solved" (0 = no user, system flag, 1 = got user flag, pwned)
 htbapi.challenges
+#challenge object contains: Name, Category, Solves, Difficulty, "solved" (0 = unsolved, 1 = solved)
+#Difficulty is based on ratings
 ```
 ### Profile information
 ```py
@@ -44,9 +47,6 @@ print htbapi.profile
 ```py
 htbapi.calcownership(json.dumps(htbapi.profile))
 ```
-
-
-
 
 The htb.py example will calculate the easiest ways to reach the next HTB rank based on the difficulty of the machines and challenges
 
