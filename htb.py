@@ -227,8 +227,6 @@ htbapi.init()
 
 machines = htbapi.machines
 challenges = htbapi.challenges
-#htbapi.machines = open("m","r").read()
-#htbapi.challenges = open("c","r").read()
 
 userinfo(htbapi)
 get_solve_options(htbapi)
