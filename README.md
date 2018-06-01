@@ -1,5 +1,5 @@
 # htbapi
-First of all you have to edit the config. Username and password are used to login.  
+First of all you have to edit the config. Username and password are used to login.
 ```
 {
   "search": {
