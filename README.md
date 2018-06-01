@@ -81,4 +81,4 @@ The htb.py example will calculate the easiest ways to reach the next HTB rank ba
 [+] 1 user, 2 system, 11 challenges
 [+] Difficulty: 50.07%
 ```
-# The script is completely based on HTML scraping. If HTB decides to change their design the script doesn't work until it gets adjusted.
+### The script is completely based on HTML scraping. If HTB decides to change their design the script doesn't work until it gets adjusted.
