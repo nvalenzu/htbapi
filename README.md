@@ -14,3 +14,13 @@ First of all you have to edit the config. Username and password are used to logi
   }
 }
 ```
+
+##Initialization
+```
+from htb_api import *
+
+htbapi = HTBAPI(configfile="config", loglevel=2)
+htbapi.init()
+```
+
+##Information about active machines and challenges
