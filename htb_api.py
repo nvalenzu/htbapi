@@ -100,7 +100,9 @@ class HTBAPI(object):
     def login(self):
         s=requests.Session()
         r=s.get("https://www.hackthebox.eu/login") #get csrf-token
-        csrftoken=r.content.split('"csrf-token" content="')[1].split('"')[0]
+        #csrftoken=r.content.split('name="_token" value="')[0].split('"')[0]
+        #csrftoken=r.content[:5190][5150:].split("'")[0]
+        csrftoken=r.content.split('name="_token" value=')[1].split(">")[0].replace('"', "")
         data={'_token':csrftoken,'email':self.email,'password':self.password}
         r=s.post("https://www.hackthebox.eu/login",data=data)
         if not r.status_code == 200 or not s.get(self.searchprofileurl).status_code == 200:
