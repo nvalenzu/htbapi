@@ -149,6 +149,8 @@ class HTBAPI(object):
         oa_ratings += r
         score += (r * i)
         i+=1.
+      if oa_ratings == 0:
+          oa_ratings = 1
       difficulty = int(round((float(score) / float(oa_ratings * 10.)) * 100.))
       return difficulty
 
